@@ -13,7 +13,7 @@ It downloads them on first launch, keeping the image size down and allowing for 
 ## How To Run
 This is the base command:
 ```
-docker run -v /path/to/data:/data -p 7777:7777/udp -e CD_KEY=YOUR-CDKEY-HERE -e PUID=1000 phasecorex/ut2004-server
+docker run -v /path/to/data:/data -p 7777:7777/udp -e CD_KEY=YOUR-CDKEY-HERE -e PUID=1000 kaishiro88/ut2004-server
 ```
 - `-v /path/to/data:/data`: The path to a data directory. The entire server and all data will be downloaded here. This NEEDS to have a volume mounted to it for the container to start.
 - `-p 7777:7777/udp`: Port for the game server to listen on. You need this for game clients to connect to the server.
