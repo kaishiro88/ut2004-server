@@ -1,11 +1,6 @@
 # Unreal Tournament 2004 Server
 UT2004 Server, packaged nicely in a container
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/phasecorex/ut2004-server)](https://hub.docker.com/r/phasecorex/ut2004-server)
-[![Build Status](https://github.com/PhasecoreX/docker-ut2004-server/workflows/build/badge.svg)](https://github.com/PhasecoreX/docker-ut2004-server/actions?query=workflow%3Abuild)
-[![BuyMeACoffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange)](https://buymeacoff.ee/phasecorex)
-[![PayPal](https://img.shields.io/badge/paypal-donate-blue)](https://paypal.me/pcx)
-
 ## Some Notes
 This image contains no server data. Instead, it downloads all the data it needs:
  - UT2004 Server v3369_2 (latest version)
@@ -14,8 +9,6 @@ This image contains no server data. Instead, it downloads all the data it needs:
  - CSS fixes and UWeb UTF-8 fixes
 
 It downloads them on first launch, keeping the image size down and allowing for it to be updated without redownloading all of the unchanging UT2004 server files. If there is an update to the contents of the server, there is an updater system in place. Additionally, this updater will not overwrite any .ini files, as they are stored elsewhere.
-
-Looking for a UT99 Server? [Check out my container for that!](https://github.com/PhasecoreX/docker-ut99-server)
 
 ## How To Run
 This is the base command:
